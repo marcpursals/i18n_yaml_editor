@@ -12,95 +12,7 @@
     <script src="assets/javascripts/bootstrap_3_3_7.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/stylesheets/custom.css">
-    <style>
-      /* STATS */
-      .stats {
-        padding-left: 0.5em;
-        font-size: 1.2em;
-        border-bottom: 1px solid #bbb;
-      }
-
-      .stats > span {
-        display: inline-block;
-        margin-bottom: 0.5em;
-      }
-
-      .stats > .done {
-        border-bottom: 2px solid #3f3;
-      }
-
-      .stats > .incomplete {
-        border-bottom: 2px solid #f33;
-      }
-
-      .stats > .empty {
-        border-bottom: 2px solid #33f;
-      }
-
-      /* TRANSLATIONS */
-      table.keys {
-        width: 100%;
-      }
-
-      table.keys .key {
-        padding-left: 0.5em;
-      }
-
-      table.keys tr.translation > td {
-        border-bottom: 1px solid #bbb;
-      }
-
-      table.keys tr.translation.incomplete .key .text {
-        border-bottom: 3px solid #f33;
-      }
-
-      table.keys tr.translation.empty .key .text {
-        border-bottom: 3px solid #33f;
-      }
-
-      table.keys td.key {
-        width: 300px;
-      }
-
-      table.locales td.value input {
-        width: 600px;
-      }
-
-      table.locales td.value input[type=radio] {
-        width: 20px;
-      }
-
-      table.locales td.value label {
-        margin-right: 20px;
-      }
-
-      /* CATEGORIES */
-
-      table.categories {
-        width: 100%;
-      }
-
-      table.categories .key {
-        padding-left: 0.5em;
-      }
-
-      table.categories tr.category a {
-        text-decoration: none;
-      }
-
-      table.categories tr.category > td {
-        border-bottom: 1px solid #bbb;
-      }
-
-      table.categories tr.category > td {
-        padding-top: 1em;
-        padding-bottom: 1em;
-      }
-
-      table.categories tr.category.incomplete .key .text {
-        border-bottom: 3px solid #f33;
-      }
-    </style>
+      
   </head>
 
   <body>
@@ -128,20 +40,20 @@
       
             <form class="navbar-form navbar-left pull-right filter-form" action="/" method="get">
               <div class="form-group">
-                <label>
-                  <input class="form-control" name="filters[key]" type="text" value="<%= filters["key"] %>" placeholder="Key:"/>
+                <label class="input-label">
+                  <input class="form-control" name="filters[key]" type="text" value="" placeholder="Key:"/>
                 </label>
               </div>
               <div class="form-group">
-                <label>
-                  <input class="form-control" name="filters[text]" type="text" value="<%= filters["text"] %>" placeholder="Text:"/>
+                <label class="input-label">
+                  <input class="form-control" name="filters[text]" type="text" value="" placeholder="Text:"/>
                 </label>
               </div>
               <div class="form-group custom-control custom-checkbox">
-                <input class="custom-control-input" id="incomplete" name="filters[incomplete]" type="checkbox" <%= "checked=checked" if filters["incomplete"] == "on" %>/>
+                <input class="custom-control-input" id="incomplete" name="filters[incomplete]" type="checkbox" />
                 <label class="custom-control-label box" for="incomplete"></label>
                 <label class="custom-control-label text" for="incomplete">Incomplete</label>
-                <input class="custom-control-input" id="empty" name="filters[empty]" type="checkbox"  <%= "checked=checked" if filters["empty"] == "on" %>/>
+                <input class="custom-control-input" id="empty" name="filters[empty]" type="checkbox"  />
                 <label class="custom-control-label box" for="empty"></label>
                 <label class="custom-control-label text" for="empty">Empty</label>
               </div>
@@ -155,9 +67,8 @@
         </div>
       </div>
     </nav>
-
-    <div class="content  container-fluid">
-      <%# <%= content %> %>
+    <div class="content container-fluid">
+       OJETE
     </div>
   </body>
 </html>

@@ -75,6 +75,7 @@
       };
 
   saveOnTop.innerHTML = 'Save';
+  $(saveOnTop).addClass("btn btn-default pull-right outline-green");
   saveOnTop.onclick = function () { updateForm.onsubmit();};
   document.getElementById('save-on-top-container').appendChild(saveOnTop);
 
