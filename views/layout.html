@@ -11,6 +11,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="assets/javascripts/bootstrap_3_3_7.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" href="assets/stylesheets/custom.css">
       
   </head>
@@ -23,9 +24,9 @@
           <h1 class="navbar-brand brand-name" style="float:left">I18n Yaml Editor</h1>
           <div class="form-group navbar-form navbar-left pull-right filters-button">
             <div id="save-on-top-container" class="pull-right">
-              <!-- <button class="btn btn-default pull-right outline-green" type="button">
+              <button class="btn btn-default pull-right outline-green" type="button">
                 Save
-              </button> -->
+              </button>
             </div>
             <button class="btn btn-default pull-right margin-right-5" type="button" data-toggle="collapse" data-target="#filtersCollapse" aria-expanded="false" aria-controls="filtersCollapse">
               Filters
@@ -68,7 +69,7 @@
       </div>
     </nav>
     <div class="content container-fluid">
-       <!-- <div class="row">
+      <!-- <div class="row">
           <div class="col-md-2 col-xs-6">
             <a class="card-links" href="#">
               <div class="panel panel-default cards">
@@ -151,7 +152,113 @@
               <div class="panel-body">Teachers</div>
             </div>
          </div>
-       </div> -->
+      </div> -->
+      <!-- <div class="row">
+        <div class="col-md-12 col-xs-12 stats-row">
+          stats: { total: 19, done: 12, incomplete: 7, empty: 0}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">activerecord.errors.models.user.attributes.email.blank</div>
+            <div class="panel-body">
+              <p class="locale-input-wraper"><b class="locale-names">ca:</b><input class="form-control" value="El camp email no pot estar en blanc"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">en:</b><input class="form-control" value="The email field cant be blank"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">es:</b><input class="form-control" value="El campo email no puede estar en blanco"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">nl:</b><input class="form-control" value="De e-mail veld kan niet leeg zijn"/></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading translate-incomplete">activerecord.errors.models.user.attributes.email.taken</div>
+            <div class="panel-body">
+              <p class="locale-input-wraper"><b class="locale-names">ca:</b><input class="form-control" value="L'email ja està sent utilitzat per unaltre usuari"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">en:</b><input class="form-control" value="This email address is already being used by another user"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">es:</b><input class="form-control" value="Este email ya está siendo utilizado por otro usuario"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">nl:</b><input class="form-control" value="Dit e-mailadres wordt al gebruikt door een andere gebruiker"/></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">activerecord.errors.models.user.attributes.username.blank</div>
+            <div class="panel-body">
+              <p class="locale-input-wraper"><b class="locale-names">ca:</b><input class="form-control" value="El camp username no pot estar en blanc"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">en:</b><input class="form-control" value="The username field cant be blank"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">es:</b><input class="form-control" value="El campo username no puede estar en blanco"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">nl:</b><input class="form-control" value="De username veld kan niet leeg zijn"/></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">activerecord.errors.models.user.attributes.username.taken</div>
+            <div class="panel-body">
+              <p class="locale-input-wraper"><b class="locale-names">ca:</b><input class="form-control" value="El nom d'usuari ja està sent utilitzat per unaltre usuari"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">en:</b><input class="form-control" value="This username is not available"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">es:</b><input class="form-control" value="El nombre de usuari no esta disponible"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">nl:</b><input class="form-control" value="Deze gebruikersnaam is niet beschikbaar"/></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">activerecord.errors.models.user.attributes.password.blank</div>
+            <div class="panel-body">
+              <p class="locale-input-wraper"><b class="locale-names">ca:</b><input class="form-control" value="El camp password no pot estar en blanc"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">en:</b><input class="form-control" value="The password field cant be blank"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">es:</b><input class="form-control" value="El campo password no puede estar en blanco"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">nl:</b><input class="form-control" value="De password veld kan niet leeg zijn"/></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">activerecord.errors.models.user.attributes.password.too_short</div>
+            <div class="panel-body">
+              <p class="locale-input-wraper"><b class="locale-names">ca:</b><input class="form-control" value="La contrasenya és massa curta"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">en:</b><input class="form-control" value="The password is too short"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">es:</b><input class="form-control" value="La contraseña es demasiado corta"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">nl:</b><input class="form-control" value="Het wachtwoord is te kort"/></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading translate-incomplete">activerecord.errors.models.user.attributes.username.taken</div>
+            <div class="panel-body">
+              <p class="locale-input-wraper"><b class="locale-names">ca:</b><input class="form-control" value="El nom d'usuari ja està sent utilitzat per unaltre usuari"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">en:</b><input class="form-control" value="This username is not available"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">es:</b><input class="form-control" value="El nombre de usuari no esta disponible"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">nl:</b><input class="form-control" value="Deze gebruikersnaam is niet beschikbaar"/></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">activerecord.errors.models.user.attributes.password.blank</div>
+            <div class="panel-body">
+              <p class="locale-input-wraper"><b class="locale-names">ca:</b><input class="form-control" value="El camp password no pot estar en blanc"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">en:</b><input class="form-control" value="The password field cant be blank"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">es:</b><input class="form-control" value="El campo password no puede estar en blanco"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">nl:</b><input class="form-control" value="De password veld kan niet leeg zijn"/></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">activerecord.errors.models.user.attributes.password.too_short</div>
+            <div class="panel-body">
+              <p class="locale-input-wraper"><b class="locale-names">ca:</b><input class="form-control" value="La contrasenya és massa curta"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">en:</b><input class="form-control" value="The password is too short"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">es:</b><input class="form-control" value="La contraseña es demasiado corta"/></p>
+              <p class="locale-input-wraper"><b class="locale-names">nl:</b><input class="form-control" value="Het wachtwoord is te kort"/></p>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div>
   </body>
 </html>

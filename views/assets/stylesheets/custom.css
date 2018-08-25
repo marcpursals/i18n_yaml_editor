@@ -137,6 +137,57 @@ label {
   background-color: rgb(206, 206, 206) !important;
 }
 
+/* TRNASLATIONS */
+.panel-heading {
+  word-break: break-all;
+}
+
+.locale-input-wraper {
+  display: flex;
+}
+
+.locale-names{
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.translate-incomplete {
+  background-color: #e57373 !important;
+  color: #f3f3f3 !important;
+}
+
+.translate-empty {
+  background-color: #4FC3F7 !important;
+  color: white !important;
+}
+
+
+
+.stats-row{
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.stats {
+  font-size: 1.2em;
+}
+
+.stats > span {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.stats > .done {
+  border-bottom: 2px solid #3f3;
+}
+
+.stats > .incomplete {
+  border-bottom: 2px solid #f33;
+}
+
+.stats > .empty {
+  border-bottom: 2px solid #33f;
+}
 
 
 
@@ -168,5 +219,13 @@ label {
   .cards {
     width: 100%;
     height: calc(100vw*0.2);
+  }
+
+  /* TRANSLATIONS */
+  .panel-heading {
+    height: calc(100vh*0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }

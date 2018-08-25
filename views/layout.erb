@@ -11,95 +11,12 @@
     <!-- Latest compiled JavaScript -->
     <script src="assets/javascripts/bootstrap_3_3_7.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" href="assets/stylesheets/custom.css">
     <style>
       /* STATS */
-      .stats {
-        padding-left: 0.5em;
-        font-size: 1.2em;
-        border-bottom: 1px solid #bbb;
-      }
-
-      .stats > span {
-        display: inline-block;
-        margin-bottom: 0.5em;
-      }
-
-      .stats > .done {
-        border-bottom: 2px solid #3f3;
-      }
-
-      .stats > .incomplete {
-        border-bottom: 2px solid #f33;
-      }
-
-      .stats > .empty {
-        border-bottom: 2px solid #33f;
-      }
-
-      /* TRANSLATIONS */
-      table.keys {
-        width: 100%;
-      }
-
-      table.keys .key {
-        padding-left: 0.5em;
-      }
-
-      table.keys tr.translation > td {
-        border-bottom: 1px solid #bbb;
-      }
-
-      table.keys tr.translation.incomplete .key .text {
-        border-bottom: 3px solid #f33;
-      }
-
-      table.keys tr.translation.empty .key .text {
-        border-bottom: 3px solid #33f;
-      }
-
-      table.keys td.key {
-        width: 300px;
-      }
-
-      table.locales td.value input {
-        width: 600px;
-      }
-
-      table.locales td.value input[type=radio] {
-        width: 20px;
-      }
-
-      table.locales td.value label {
-        margin-right: 20px;
-      }
-
-      /* CATEGORIES */
-
-      table.categories {
-        width: 100%;
-      }
-
-      table.categories .key {
-        padding-left: 0.5em;
-      }
-
-      table.categories tr.category a {
-        text-decoration: none;
-      }
-
-      table.categories tr.category > td {
-        border-bottom: 1px solid #bbb;
-      }
-
-      table.categories tr.category > td {
-        padding-top: 1em;
-        padding-bottom: 1em;
-      }
-
-      table.categories tr.category.incomplete .key .text {
-        border-bottom: 3px solid #f33;
-      }
+      
+      
     </style>
   </head>
 
@@ -157,7 +74,7 @@
     </nav>
 
     <div class="content  container-fluid">
-      <%# <%= content %> %>
+      <%= content %>
     </div>
   </body>
 </html>
