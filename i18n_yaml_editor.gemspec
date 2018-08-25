@@ -3,13 +3,13 @@
 # rubocop:disable Metrics/BlockLength
 Gem::Specification.new do |s|
   s.name     = 'i18n_yaml_editor'
-  s.version  = '2.1.0'
+  s.version  = '2.2.0'
   s.date     = '2018-05-04'
   s.summary  = 'I18n Yaml Editor'
-  s.email    = 'wolfgang.teuber@sage.com'
+  s.email    = 'wolfgang.teuber@sage.com, marc@marcpursals.com'
   s.homepage = 'http://github.com/Sage/i18n_yaml_editor'
   s.description = 'I18n Yaml Editor'
-  s.authors = ['Harry Vangberg', 'Wolfgang Teuber']
+  s.authors = ['Harry Vangberg', 'Wolfgang Teuber', 'Marc Pursals']
   s.executables << 'i18n_yaml_editor'
   s.files = %w[
     README.md
