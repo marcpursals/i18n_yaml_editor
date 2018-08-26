@@ -30,6 +30,10 @@ Gem::Specification.new do |s|
     views/debug.html.erb
     views/layout.erb
     views/translations.html.erb
+    views/assets/stylesheets/bootstrap_3_3_7_min_css.erb
+    views/assets/stylesheets/custom_css.erb
+    views/assets/javascripts/jquery_min_js.erb
+    views/assets/javascripts/bootstrap_3_3_7_min_js.erb
   ]
   s.test_files = %w[
     test/test_helper.rb
